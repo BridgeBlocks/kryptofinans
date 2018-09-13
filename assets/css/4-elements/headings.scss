@@ -1,0 +1,7 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @include interpolate((padding-top, padding-bottom), 20rem, 70rem, 0, .5rem);
+}

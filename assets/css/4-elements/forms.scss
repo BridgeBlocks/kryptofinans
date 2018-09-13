@@ -1,0 +1,26 @@
+fieldset {
+  width: 250px;
+}
+
+label {
+  color: $on-light-background;
+  font-size: 17px;
+  padding-bottom: .25rem;
+  padding-left: .75rem;
+}
+
+input {
+  &[type='TEXT'],
+  [type='PASSWORD'],
+  [type='NUMBER'] {
+    border: solid 1.5px $transparent-border-color;
+    border-radius: 8px;
+    font-size: 20px;
+    height: 27.5px;
+  }
+}
+
+textarea {
+  font-size: 18px;
+  width: 245px;
+}

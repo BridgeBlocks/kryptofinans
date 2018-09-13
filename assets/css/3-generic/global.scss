@@ -1,0 +1,9 @@
+html {
+  @include interpolate(font-size, 320px, 1366px, 14px, 20px);
+}
+
+body {
+  background-color: $primary-color;
+  font-family: $global-font-family;
+  margin: 0;
+}

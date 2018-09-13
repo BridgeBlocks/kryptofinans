@@ -1,0 +1,17 @@
+// Global Settings
+// Typography
+$global-font-family: 'Verdana', Geneva, sans-serif;
+
+
+// Fluid Typography
+// @PARAM: $min-screen, Minimum viewport width
+// @PARAM: $max-screen, Maximum viewport min-width
+// @PARAM: $min-value, Minimum value of property
+// @PARAM: $max-value, Maximum value of property
+// CSS Locks: https://blog.typekit.com/2016/08/17/flexible-typography-with-css-locks/
+// Codepen: https://codepen.io/MadeByMike/pen/vNrvdZ
+
+$min-screen: 0;
+$min-value: 0;
+$max-screen: 0;
+$max-value: 0;

@@ -1,0 +1,19 @@
+// Fluid Typography
+// @PARAM: $min-screen, Minimum viewport width
+// @PARAM: $max-screen, Maximum viewport min-width
+// @PARAM: $min-value, Minimum value of property
+// @PARAM: $max-value, Maximum value of property
+// CSS Locks: https://blog.typekit.com/2016/08/17/flexible-typography-with-css-locks/
+// Codepen: https://codepen.io/MadeByMike/pen/vNrvdZ
+
+@function calc-interpolation($min-screen, $min-value, $max-screen, $max-value) {
+  $a: ($max-value - $min-value) / ($max-screen - $min-screen);
+  $b: $min-value - $a * $min-screen;
+
+  $sign: '+';
+  @if ($b < 0) {
+    $sign: '-';
+    $b: abs($b);
+	}
+  @return calc(#{$a*100}vw #{$sign} #{$b});
+}
